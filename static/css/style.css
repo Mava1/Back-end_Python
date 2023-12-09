@@ -2,12 +2,12 @@
 body {
 	margin:0;
 	padding:0;
-	background: url("/media/bg-body.gif");
+	background: url("/static/media/bg-body.gif");
 	background-repeat:repeat-x;
 }
 
 header {
-	position: relative;
+  position: relative;
   background-image: linear-gradient(359.8deg, rgba(252, 255, 222, 1) 2.2%, rgb(136, 201, 116) 99.3%);
   padding: 5%;
   margin:0 auto;
@@ -32,7 +32,7 @@ header a#logo img {
 	width:107px;
 }
 .navigation li.active {
-	background:url("/media/menu.gif");
+	background:url("/static/media/menu.gif");
 	background-repeat:no-repeat;
 	background-position: 0 -160px;
 }
@@ -44,7 +44,7 @@ header a#logo img {
 	font-weight:bold;
 	display:inline-block;
 	line-height:35px;
-	background:url("/media/menu-separator.gif");
+	background:url("/static/media/menu-separator.gif");
 	background-repeat:no-repeat;
 	background-position:right;
 	height:35px;
@@ -57,7 +57,7 @@ header a#logo img {
 }
 
 .imagen-responsive {
-	background:url("{% static './media/dog.jpg'%}");
+	background:url("/static/media/dog.jpg");
 	background-position:center;
 	background-repeat:no-repeat;
 	width:100%;

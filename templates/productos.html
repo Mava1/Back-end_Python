@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 
@@ -5,7 +7,7 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="/assets/css/mascota.css" rel="stylesheet">
+  <link href="{% static './css/mascota.css'%}" rel="stylesheet">
 
   <title>Pet Shop</title>
 
@@ -17,8 +19,8 @@
     <div id="header"> <a href="#" id="logo"><img src="/media/logo.png" width="250" height="auto" alt=""></a>
       <ul class="navigation">
         <li class="active"><a href="/index.html">Nosotros</a></li>
-        <li><a href="./productos.html">Productos</a></li> 
-        <li><a href="./contacto.html">Contactanos</a></li>
+        <li><a href="{% url 'productos'%}">Productos</a></li> 
+        <li><a href="{% url 'contacto'%}">Contactanos</a></li>
       </ul>
     </div>
   </header>

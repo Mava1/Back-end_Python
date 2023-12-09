@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 
@@ -5,7 +7,7 @@
   <title>Pet Shop</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/assets/css/producto.css">
+  <link rel="stylesheet" href="{% static '/css/producto.css' %}">
 
   <title> 🐱Gatos</title>
 </head>
@@ -14,9 +16,9 @@
   <header>
     <div id="header"> <a href="#" id="logo"><img src="/media/logo.png" width="250" height="auto" alt=""></a>
       <ul class="navigation">
-        <li class="active"><a href="/index.html">Nosotros</a></li>
-        <li><a href="./productos.html">Productos</a></li>
-        <li><a href="./contacto.html">Contactanos</a></li>
+        <li class="active"><a href="index.html">Nosotros</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="contacto.html">Contactanos</a></li>
       </ul>
     </div>
   </header>
@@ -91,7 +93,7 @@
 
   </footer>
 
-  <script src="/assets/js/producto.js"></script>
+  <script src="{% static './js/producto.js' %}"></script>
 
 
 </body>
