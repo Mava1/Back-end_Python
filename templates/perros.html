@@ -8,18 +8,18 @@
   <title>🐶Perros</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- <link href="/assets/css/style.css" rel="stylesheet"> -->
-  <link rel="stylesheet" href="/assets/css/producto.css">
+
+  <link rel="stylesheet" href="{% static './css/producto.css' %}">
 
 </head>
 
 <body>
   <header>
-    <di id="header"> <a href="#" id="logo"><img src="/media/logo.png" width="250" height="auto" alt=""></a>
+    <di id="header"> <a href="#" id="logo"><img src="{% static './media/logo.png'%}" width="250" height="auto" alt=""></a>
       <ul class="navigation">
-        <li class="active"><a href="../index.html">Nosotros</a></li>
-        <li><a href="./productos.html">Productos</a></li>
-        <li><a href="./contacto.html">Contactanos</a></li>
+        <li class="active"><a href="{% url 'index'%}">Nosotros</a></li>
+        <li><a href="{% url 'productos' %}">Productos</a></li>
+        <li><a href="{% url 'contacto'%}">Contactanos</a></li>
       </ul>
     </di>
   </header>
@@ -35,17 +35,17 @@
     <table id="container">
       <tr class="fila1">
         <td class="card">
-          <img id="imagen1" src="../media/alimperro2.jpeg" alt="">
+          <img id="imagen1" src="{% static './media/alimperro2.jpeg'%}" alt="">
           <p>Royal Canin Perro Veterinary Hipoalergénico X 10 Kg</p>
         </td>
 
         <td class="card">
-          <img id="imagen2" src="../media/alimperro3.jpeg" alt="">
+          <img id="imagen2" src="{%static './media/alimperro3.jpeg' %}" alt="">
           <p>Royal Canin Perro Adulto Gigante X 15 Kg</p>
         </td>
 
         <td class="card">
-          <img id="imagen3" src="../media/alimperro4.jpeg" alt="">
+          <img id="imagen3" src="{% static './media/alimperro4.jpeg' %}" alt="">
           <p>
             Royal Canin Giant Adult: alimento para perros adultos de talla
             gigante
@@ -53,29 +53,29 @@
         </td>
 
         <td class="card">
-          <img id="imagen4" src="/media/old prince premium.jpg" alt="">
+          <img id="imagen4" src="{%static './media/old prince premium.jpg' %}" alt="">
           <p>Old Prince Premium Adultos Cordero X 15Kg</p>
         </td>
       </tr>
       <tr class="fila2">
         <td class="card">
-          <img id="imagen5" src="../media/images (1).jpeg" alt="">
+          <img id="imagen5" src="{%static './media/images (1).jpeg' %}" alt="">
           <p>PETS CLASS p/perro pollo y leche</p>
         </td>
 
         <td class="card">
-          <img id="imagen6" src="../media/images (2).jpeg" alt="">
+          <img id="imagen6" src="{%static './media/images (2).jpeg' %}" alt="">
           <p> 100 % completo y balanceado para perros cachorros carne vacuna
             seleccionada. </p>
         </td>
 
         <td class="card">
-          <img id="imagen7" src="/media/images (3).jpeg" alt="">
+          <img id="imagen7" src="{% static './media/images (3).jpeg' %}" alt="">
           <p> Alomento Blando de pollo</p>
         </td>
 
         <td class="card">
-          <img id="imagen8" src="../media/images (5).jpeg" alt="">
+          <img id="imagen8" src="{%static './media/images (5).jpeg' %}" alt="">
           <p>Pouch Pedigree Carne para Perro Adulto</p>
         </td>
 
@@ -83,17 +83,17 @@
 
       <tr class="fila3">
         <td class="card">
-          <img id="imagen9" src="/media/buzopelucheosito.jpg" alt="">
+          <img id="imagen9" src="{% static './media/buzopelucheosito.jpg' %}" alt="">
           <p>Buzo peluche de Osito</p>
         </td>
 
         <td class="card">
-          <img id="imagen10" src="/media/comedero doble.jpg" alt="">
+          <img id="imagen10" src="{%static './media/comedero doble.jpg' %}" alt="">
           <p>Comedor doble artesanal J&C</p>
         </td>
 
         <td class="card">
-          <img id="imagen11" src="/media/pelotagomacascabel.png" alt="">
+          <img id="imagen11" src="{% static './media/pelotagomacascabel.png' %}" alt="">
           <p>Pelota atomo degoma con Cascabe</p>
         </td>
       </tr>
@@ -106,7 +106,7 @@
       <h2> María - Pablo - Liliana </h2>
     </center>
   </div>
-  <script src="/assets/js/producto.js"></script>
+  <script src="{% static './js/producto.js' %}"></script>
 
 </body>
 

@@ -15,5 +15,4 @@ class Gatos (TemplateView):
 class Productos (TemplateView):
     template_name = "productos.html"   
 
-class Otros (TemplateView):
-    template_name = "otros.html"   
+  

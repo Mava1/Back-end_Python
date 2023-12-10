@@ -1,6 +1,4 @@
 
-//------------------------------------//
-
 var form = document.getElementById('PedidosPetShop');
 form.addEventListener("submit", e => {
   e.preventDefault();

@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from .views import IndexPage , Contacto, Perros, Productos, Gatos, Otros
+from .views import IndexPage , Contacto, Perros, Productos, Gatos
 
 urlpatterns = [
 
@@ -27,7 +27,7 @@ urlpatterns = [
     path("perros" , Perros.as_view(), name= "perros"),
     path("gatos" , Gatos.as_view(), name= "gatos"),
     path("productos" , Productos.as_view(), name= "productos"),
-    path("otros" , Otros.as_view(), name= "otros"),
+   
 
      
 ]
