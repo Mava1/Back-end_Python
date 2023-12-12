@@ -7,7 +7,7 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="{% static './css/mascota.css'%}" rel="stylesheet">
+  <link href="{% static './css/mascota.css' %}" rel="stylesheet">
 
   <title>Pet Shop</title>
 
@@ -18,9 +18,9 @@
   <header>
     <div id="header"> <a href="#" id="logo"><img src="{% static './media/logo.png' %}" width="250" height="auto" alt=""></a>
       <ul class="navigation">
-        <li class="active"><a href="{%url 'index'% }">Nosotros</a></li>
-        <li><a href="{% url 'productos'%}">Productos</a></li> 
-        <li><a href="{% url 'contacto'%}">Contactanos</a></li>
+        <li class="active"><a href="{%url 'index' %}">Nosotros</a></li>
+        <li><a href="{% url 'productos' %}">Productos</a></li> 
+        <li><a href="{% url 'contacto' %}">Contactanos</a></li>
       </ul>
     </div>
   </header>
@@ -32,7 +32,7 @@
         <picture>
           <button>
             <h2>Perros</h2>
-            <a href="{% url 'perros'%}" target="_blank">
+            <a href="{% url 'perros' %}" target="_blank">
               <img
                 src="https://media.istockphoto.com/id/1344938288/es/foto/hombre-feliz-entrenando-con-su-perro-en-la-naturaleza.jpg?s=612x612&w=0&k=20&c=PxgKJuA9CyS_468SwZ5LkjL_eT04-ULG3FoaXRuws1s="
                 alt="PERROS"></a>
