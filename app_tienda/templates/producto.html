@@ -1,0 +1,63 @@
+{% extends 'index.html' %} 
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos/title>
+</head>
+<body>
+    <header>
+        <h1>Mi Tienda en Línea</h1>
+    </header>
+
+    <main>
+        <div class="producto">
+            <h2>Producto </h2>
+            <h3><a href="{% url 'producto_create' %}"></a>Crear producto/<h3>
+            <div class="list "> 
+                {% for producto in producto_list %}
+
+                <fieldset>
+                    <legend> Nombre: {{producto.nombre}} </legend> 
+                    <ul>
+                        <li>Descripcion: {{producto.descripcion}} </li>
+                        <li>Precio: {{producto.precio}} </li>
+                        <li>Cantidad disponible: {{producto.cantidad_disponible }}</li>
+                        <li>Fecha de Creacion:{{producto.fecha_creacion}}</li>   
+                    </ul>
+                    </legend>
+
+                    <div>
+                        <a href="{% url 'producto:detail' tienda.id %}">
+                            Detalle de {{producto.nombre}}  
+                        </a>
+                    </div>
+                    <div>
+                        <a href="{% url 'producto:delete' tienda.id %}">
+                            Borrar  {{producto.nombre}}  
+                        </a>
+                    </div>
+                    <div>
+                        <a href="{% url 'producto:update' tienda.id %}">
+                            Detalle de {{producto.nombre}}  
+                        </a>
+                    </div>
+                </fieldset>
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+    {% endblock %}
+
+    <footer>
+        <p>&copy; 2023 Mi Tienda en Línea</p>
+    </footer>
+
+
+
+    
+</body>
+</html>

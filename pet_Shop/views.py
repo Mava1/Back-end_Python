@@ -1,6 +1,7 @@
 from django.views.generic import TemplateView
 
 class IndexPage (TemplateView):
+    extra_context = {"Back-end": "python"}
     template_name = "index.html"
 
 class Contacto (TemplateView):
