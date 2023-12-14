@@ -16,13 +16,11 @@ class ProductoBaseView(View):
     template_name = 'producto.html'
     model = Producto
     fields = '__all__'
-    success_url = reverse_lazy('producto:all')
+    success_url = reverse_lazy('Producto:all')
 
 
 class ProductoListView(ProductoBaseView,ListView):
-    """
-    ESTO ME PERMITE CREAR UNA VISTA CON LOS VINOS
-    """
+    ...
 
 class ProductoDetailView(ProductoBaseView,DetailView):
     template_name = "producto_detail.html"
