@@ -1,7 +1,6 @@
 from django.views.generic import TemplateView
 
 class IndexPage (TemplateView):
-    extra_context = {"Back-end": "python"}
     template_name = "index.html"
 
 class Contacto (TemplateView):
@@ -13,7 +12,7 @@ class Perros (TemplateView):
 class Gatos (TemplateView):
     template_name = "gatos.html"    
 
-class Productos (TemplateView):
-    template_name = "productos.html"   
+class Tienda (TemplateView):
+    template_name = "tienda.html"   
 
   

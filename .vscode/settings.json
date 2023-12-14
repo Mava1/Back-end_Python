@@ -1,3 +1,8 @@
 {
-    "liveServer.settings.port": 1024
+    "liveServer.settings.port": 1024,
+    "python.testing.pytestArgs": [
+        "app_tienda"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
 }
