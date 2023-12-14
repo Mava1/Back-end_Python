@@ -9,14 +9,13 @@ from django.views.generic.detail import DetailView
 
 from .models import Producto
 
-# Create your views here.
 
 
 class ProductoBaseView(View):
     template_name = 'producto.html'
     model = Producto
     fields = '__all__'
-    success_url = reverse_lazy('Producto:all')
+    success_url = reverse_lazy('producto:all')
 
 
 class ProductoListView(ProductoBaseView,ListView):

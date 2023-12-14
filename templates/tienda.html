@@ -19,14 +19,16 @@
   <header>
     <div id="header"> <a href="#" id="logo"><img src="{% static './media/logo.png' %}" width="250" height="auto" alt=""></a>
       <ul class="navigation">
-<<<<<<< HEAD
         <li class="active"><a href="{%url 'index' %}">Nosotros</a></li>
-        <li><a href="{% url 'tienda' %}">Productos</a></li> 
-=======
-        <li class="active"><a href="{% url 'index' %}">Nosotros</a></li>
         <li><a href="{% url 'tienda' %}">Tienda</a></li> 
->>>>>>> refs/remotes/origin/main
         <li><a href="{% url 'contacto' %}">Contactanos</a></li>
+
+        {% if user.is_authenticated %}
+           <li><a href="{% url 'admin:index' %}"><button>Panel de Administración</button></a></li>
+        {% else %}
+           <li><a href="{% url 'admin:login' %}"><button>Iniciar sesión en el Panel de Administración</button></a></li>
+        {% endif %}
+        
       </ul>
     </div>
   </header>
