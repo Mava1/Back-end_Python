@@ -25,13 +25,13 @@ SECRET_KEY = "django-insecure-0zlg8=c^3t!3$zm953g7d(yuaq6798j0g^as0sbi4@d*^k95ad
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = []
 
 
 # Application definition
 
 CUSTOM_APPS =  [
-    "app_tienda"
+    "app_producto"
 ]
 
 INSTALLED_APPS = [
