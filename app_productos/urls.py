@@ -1,10 +1,14 @@
 from django.contrib import admin
-from django.urls import path
-from .views import ListaProductosView
+from django.urls import path , include
 
-app_name = 'app_productos'
+
+from .views import      ProductoListView   
+            
+
+app_name = "productos"
 
 urlpatterns = [
+    path("", ProductoListView.as_view(), name="all")
+    
 
-    path('productos/', ListaProductosView.as_view(), name='lista_productos'),
 ]

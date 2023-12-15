@@ -18,3 +18,6 @@ class Producto(Model):
 
     def __str__(self):
         return self.nombre
+
+    class Meta:
+         db_table = "productos_table"
