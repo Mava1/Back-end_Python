@@ -3,6 +3,8 @@ from django.urls import path
 from django.urls import include
 from .views import IndexPage , Contacto, Perros, Tienda, Gatos
 
+from app_productos.views import ListaProductosView
+
 urlpatterns = [
 
     path("admin/", admin.site.urls),
@@ -11,8 +13,8 @@ urlpatterns = [
     path("perros/" , Perros.as_view(), name= "perros"),
     path("gatos/" , Gatos.as_view(), name= "gatos"),
     path("tienda/" , Tienda.as_view(), name= "tienda"),
-    path("producto/", include("app_producto.urls"))
-
+    path('app_productos/', include('app_productos.urls')),
+    path('', ListaProductosView.as_view(), name='lista'),
 ]
 
 

@@ -1,4 +1,5 @@
 {% load static %}
+{% extends 'app_productos/lista_productos.html' %}
 
 
 <!DOCTYPE html>
@@ -20,6 +21,7 @@
         <li class="active"><a href="{% url 'index' %}">Nosotros</a></li>
         <li><a href="{% url 'tienda' %}">Tienda</a></li>
         <li><a href="{% url 'contacto' %}">Contactanos</a></li>
+        
       </ul>
     </div>
   </header>

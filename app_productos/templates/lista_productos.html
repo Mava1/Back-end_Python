@@ -1,0 +1,10 @@
+<!-- templates/app_productos/lista_productos.html -->
+
+
+
+<h2>Productos en la Página de Inicio</h2>
+<ul>
+    {% for producto in productos %}
+        <li>{{ producto.nombre }} - Precio: {{ producto.precio }}</li>
+    {% endfor %}
+</ul>

@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 CUSTOM_APPS =  [
-    "app_producto"
+    "app_productos"
 ]
 
 INSTALLED_APPS = [
