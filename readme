@@ -1,0 +1,19 @@
+Trabajo integrador final
+Para la realización del trabajo final reutilizamos el proyecto de Frontend de una tienda de
+mascotas, definimos qué páginas y funcionalidades tendrá tu aplicación, cómo se verán y
+cómo se relacionarán entre sí adaptándolo a Python. Y aplicando el l sistema de plantillas de
+Django, el proyecto está diseñado bajo el patrón CRUD (Create, Read, Update, Delete).
+Desde una plantilla base, se basan las demás plantillas del sitio. Creamos una base de
+datos de MySQL con los detalles de productos (Nombre, id, descripción, imagen y precio), la
+que conectamos con Django para poder trabajar en ella, creando una clase para las tablas en
+la carpeta de Models.py de la carpeta de la app. Posteriormente procedimos a registrar la
+aplicación creada en el proyecto. Usamos uso de frameworks como Flasl, y librerías de
+Django-User. Aplicamos formato con Bootstrap,CSSy JavaScript para la interfaz gráfica.
+Creamos un superusuario con perfil de administrador para el panel de administración.
+Creamos un formulario html en carpeta Templates, atravez del cual con el GET de request.
+Una vez finalizado el trabajo hicimos, depuramos la aplicación para detectar errores atravez
+de Pytest en Visual Studio Code , y finalmente hicimos usamos PythonAnywhere para
+publicarlo.
+Maria Acosta DNI 29697454 mava_19@hotmail.com
+Liliana Cora Sily DNI 23749208 lsilyar@hotmail.com
+Pablo Gabriel Schapovaloff DNI 26879476 racing2001c@gmail.com
